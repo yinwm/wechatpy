@@ -6,28 +6,68 @@
 wechatpy 使用文档
 ====================================
 
-wechatpy 是一个微信 (WeChat) 公众平台的第三方 Python SDK, 实现了普通公众平台和企业号公众平台的解析消息、生成回复和主动调用等 API。
+wechatpy 是一个微信 (WeChat) 的第三方 Python SDK, 实现了微信公众号、企业微信和微信支付等 API。
 
-安装与升级
+快速入门
 -------------
 
 .. toctree::
    :maxdepth: 2
 
    install
+   quickstart
+   sponsor
 
 微信公众平台接口
 -------------------
 
+建议在使用前先阅读 `微信开发平台官方文档 <https://developers.weixin.qq.com/doc/>`_
+
 .. toctree::
+   :glob:
    :maxdepth: 2
 
    messages
    events
    replies
-   client
+   client/index
+   pay
+   oauth
 
-微信企业号平台接口
--------------------
+企业微信平台接口
+---------------------
 
-TODO: 待完善
+建议在使用前先阅读 `企业微信API <https://work.weixin.qq.com/api/doc#>`_
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   work/quickstart
+   work/client
+
+
+微信公众号第三方平台接口
+-----------------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   component
+
+
+示例项目/扩展程序
+---------------------
+
+1. `django restful demo <https://github.com/wechatpy/django-wechat-example/>`_
+2. `WeCron 基于微信的定时提醒 <https://github.com/polyrabbit/WeCron>`_
+3. `flask-wechatpy <https://github.com/cloverstd/flask-wechatpy>`_ Flask 扩展
+
+
+更新日志
+---------------
+
+.. toctree::
+   :maxdepth: 1
+
+   changelog
